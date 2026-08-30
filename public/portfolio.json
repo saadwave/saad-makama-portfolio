@@ -1,0 +1,94 @@
+{
+  "name": "Sa'ad Makama",
+  "phone": "08084539787",
+  "email": "saadmakama411@gmail.com",
+  "age": 23,
+  "stateOfOrigin": "FCT",
+  "address": "Lugbe, FCT Abuja",
+  "university": "Ahmadu Bello University, Zaria",
+  "programme": "Computer Engineering",
+  "level": "500 Level / Final Year",
+  "profile": "Sa'ad is a final-year Computer Engineering student at Ahmadu Bello University, Zaria, building a career at the intersection of engineering, technology, Web3 business development, and fintech. He is naturally curious and systems-minded, with an interest in understanding how hardware, software, blockchain systems, and digital markets work. His professional interests include Web3 business development, KOL and affiliate partnerships, blockchain technology, and crypto trading.",
+  "education": [
+    { "institution": "Ahmadu Bello University (ABU), Zaria", "detail": "Computer Engineering — Final Year" },
+    { "institution": "Government Secondary School, Lugbe, Abuja", "detail": "Secondary Education" },
+    { "institution": "Blessed and Precious International School, Abuja", "detail": "Primary Education" }
+  ],
+  "certifications": [
+    "SSCE Certificate",
+    "Cisco Networking Essentials",
+    "Cisco Introduction to Cybersecurity",
+    "Cisco Cybersecurity Essentials",
+    "CSS",
+    "HTML",
+    "AWS Cloud Computing",
+    "Web3 Marketing",
+    "Digital Marketing Fundamentals",
+    "Web3 and Blockchain Marketing Strategies",
+    "CorelDRAW Fundamentals"
+  ],
+  "skills": {
+    "engineering": [
+      "Computer Engineering Fundamentals",
+      "Hardware and Software Systems",
+      "Networking",
+      "Cybersecurity Fundamentals",
+      "Cloud Computing",
+      "HTML & CSS"
+    ],
+    "web3": [
+      "Blockchain Concepts",
+      "Web3 Business Development",
+      "Crypto/Web3 Partnerships",
+      "KOL & Affiliate Partnerships",
+      "Blockchain Traceability"
+    ],
+    "business": [
+      "Partnership Sourcing",
+      "KOL Outreach",
+      "Affiliate Partnerships",
+      "Relationship Building",
+      "Professional Networking",
+      "Content Strategy"
+    ],
+    "crypto": [
+      "Solana Ecosystem",
+      "Memecoin Trading",
+      "Narrative Pattern Recognition",
+      "Entry Discipline",
+      "Position Sizing",
+      "Trade Logging and Review"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Web3 Business Development Outreach",
+      "description": "Engaging with Web3 projects and communities to explore business-development opportunities, partnerships, and KOL/affiliate collaboration within the blockchain ecosystem."
+    },
+    {
+      "title": "Independent Crypto Trading",
+      "description": "Actively trading within the Solana ecosystem, applying disciplined entry strategies, position sizing, narrative pattern recognition, and structured trade logging and review."
+    },
+    {
+      "title": "Business Development Exploration in the Agro Sector",
+      "description": "Exploring business-development opportunities in the agro sector, applying relationship-building and partnership-sourcing skills to connect technology with real-world value chains."
+    }
+  ],
+  "goals": [
+    "Computer Engineering",
+    "Web3 Business Development",
+    "KOL & Affiliate Partnerships",
+    "Blockchain Technology",
+    "Fintech",
+    "Crypto Trading",
+    "Technology Innovation"
+  ],
+  "values": [
+    "Integrity",
+    "Goal-driven mindset",
+    "Curiosity",
+    "Discipline",
+    "Continuous learning",
+    "Professionalism"
+  ]
+}
