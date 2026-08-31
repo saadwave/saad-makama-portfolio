@@ -5,20 +5,20 @@
    ============================================================ */
 
 :root {
-  --color-black: #ffffff;
-  --color-graphite: #fbfbfc;
-  --color-charcoal: #f4f4f6;
-  --color-slate: #ececef;
-  --color-steel: #dcdce1;
-  --color-metal: #c7c7cf;
-  --color-ash: #5c5c66;
-  --color-silver: #45454e;
-  --color-platinum: #26262c;
-  --color-mist: #16161a;
-  --color-white: #0a0a0d;
+  --color-black: #0a0a0b;
+  --color-graphite: #141414;
+  --color-charcoal: #1c1c1c;
+  --color-slate: #242424;
+  --color-steel: #2e2e2e;
+  --color-metal: #3a3a3a;
+  --color-ash: #8a7a54;
+  --color-silver: #b9a066;
+  --color-platinum: #d9c398;
+  --color-mist: #e6d3a1;
+  --color-white: #f0d98a;
 
-  --accent: #55555f;
-  --accent-bright: #2b2b33;
+  --accent: #b8934b;
+  --accent-bright: #e2b84f;
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -59,19 +59,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-}
-
-/* Engineering grid background */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 48px 48px;
-  pointer-events: none;
-  z-index: 0;
 }
 
 img {
@@ -167,10 +154,10 @@ p {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(10, 10, 11, 0.82);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(10, 10, 20, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav {
@@ -204,7 +191,7 @@ p {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent-bright);
-  background: rgba(43, 43, 51, 0.06);
+  background: rgba(226, 184, 79, 0.06);
 }
 
 .nav__links {
@@ -226,12 +213,12 @@ p {
 
 .nav__links a:hover {
   color: var(--color-white);
-  background: rgba(10, 10, 20, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .nav__links a.active {
   color: var(--color-white);
-  background: rgba(43, 43, 51, 0.1);
+  background: rgba(226, 184, 79, 0.1);
 }
 
 /* ---------- Hero ---------- */
@@ -274,25 +261,15 @@ p {
 .hero__visual {
   position: relative;
   aspect-ratio: 1 / 1;
-  border: 1px solid rgba(10, 10, 20, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   background:
-    radial-gradient(circle at 30% 30%, rgba(43, 43, 51, 0.07), transparent 55%),
+    radial-gradient(circle at 30% 30%, rgba(226, 184, 79, 0.07), transparent 55%),
     linear-gradient(135deg, var(--color-charcoal), var(--color-graphite));
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero__visual::before {
-  content: "";
-  position: absolute;
-  background:
-    linear-gradient(var(--grid-line-bold) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line-bold) 1px, transparent 1px);
-  background-size: 32px 32px;
-  inset: 0;
 }
 
 .hero__photo {
@@ -302,8 +279,8 @@ p {
   height: 78%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(43, 43, 51, 0.3);
-  box-shadow: 0 0 40px rgba(20, 20, 30, 0.14);
+  border: 3px solid rgba(226, 184, 79, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 .hero__badge {
@@ -366,20 +343,20 @@ p {
 .btn--ghost {
   background: transparent;
   color: var(--color-platinum);
-  border-color: rgba(10, 10, 20, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .btn--ghost:hover {
   border-color: var(--accent-bright);
   color: var(--color-white);
-  background: rgba(43, 43, 51, 0.06);
+  background: rgba(226, 184, 79, 0.06);
 }
 
 /* ---------- Page Header ---------- */
 
 .page-header {
   padding: 5rem 0 2.5rem;
-  border-bottom: 1px solid rgba(10, 10, 20, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   position: relative;
 }
 
@@ -409,14 +386,14 @@ p {
 
 .card {
   background: linear-gradient(160deg, var(--color-charcoal), var(--color-graphite));
-  border: 1px solid rgba(10, 10, 20, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius-md);
   padding: 2rem;
   transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
 }
 
 .card:hover {
-  border-color: rgba(43, 43, 51, 0.25);
+  border-color: rgba(226, 184, 79, 0.25);
   transform: translateY(-3px);
 }
 
@@ -424,11 +401,11 @@ p {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(43, 43, 51, 0.2);
+  border: 1px solid rgba(226, 184, 79, 0.2);
   display: grid;
   place-items: center;
   margin-bottom: 1.2rem;
-  background: rgba(43, 43, 51, 0.05);
+  background: rgba(226, 184, 79, 0.05);
 }
 
 .card__icon svg {
@@ -510,7 +487,7 @@ p {
   background: linear-gradient(
     to bottom,
     var(--accent-bright),
-    rgba(43, 43, 51, 0.1)
+    rgba(226, 184, 79, 0.1)
   );
 }
 
@@ -570,10 +547,10 @@ p {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(43, 43, 51, 0.2);
+  border: 1px solid rgba(226, 184, 79, 0.2);
   display: grid;
   place-items: center;
-  background: rgba(43, 43, 51, 0.05);
+  background: rgba(226, 184, 79, 0.05);
   flex-shrink: 0;
 }
 
@@ -602,15 +579,15 @@ p {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--color-platinum);
-  background: rgba(10, 10, 20, 0.04);
-  border: 1px solid rgba(10, 10, 20, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-sm);
   transition: all 0.2s var(--ease);
 }
 
 .skill-tag:hover {
-  border-color: rgba(43, 43, 51, 0.3);
-  background: rgba(43, 43, 51, 0.08);
+  border-color: rgba(226, 184, 79, 0.3);
+  background: rgba(226, 184, 79, 0.08);
   color: var(--color-white);
 }
 
@@ -622,13 +599,13 @@ p {
   gap: 1rem;
   padding: 1.4rem 1.6rem;
   background: linear-gradient(160deg, var(--color-charcoal), var(--color-graphite));
-  border: 1px solid rgba(10, 10, 20, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius-md);
   transition: all 0.2s var(--ease);
 }
 
 .cert-card:hover {
-  border-color: rgba(43, 43, 51, 0.25);
+  border-color: rgba(226, 184, 79, 0.25);
   transform: translateX(4px);
 }
 
@@ -636,11 +613,11 @@ p {
   width: 38px;
   height: 38px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(43, 43, 51, 0.2);
+  border: 1px solid rgba(226, 184, 79, 0.2);
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  background: rgba(43, 43, 51, 0.05);
+  background: rgba(226, 184, 79, 0.05);
 }
 
 .cert-card__mark svg {
@@ -665,7 +642,7 @@ p {
   gap: 1.5rem;
   padding: 2.5rem;
   background: linear-gradient(160deg, var(--color-charcoal), var(--color-graphite));
-  border: 1px solid rgba(10, 10, 20, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius-lg);
 }
 
@@ -696,7 +673,7 @@ p {
 
 .cv-sidebar {
   background: linear-gradient(180deg, var(--color-charcoal), var(--color-graphite));
-  border: 1px solid rgba(10, 10, 20, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius-lg);
   padding: 2rem;
   position: sticky;
@@ -707,7 +684,7 @@ p {
   font-size: 1rem;
   margin-bottom: 1rem;
   padding-bottom: 0.6rem;
-  border-bottom: 1px solid rgba(10, 10, 20, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .cv-sidebar h3:not(:first-child) {
@@ -731,7 +708,7 @@ p {
   font-size: 1.15rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(10, 10, 20, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .cv-main h3:not(:first-child) {
@@ -780,24 +757,24 @@ p {
   gap: 1rem;
   padding: 1.2rem 1.4rem;
   background: linear-gradient(160deg, var(--color-charcoal), var(--color-graphite));
-  border: 1px solid rgba(10, 10, 20, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius-md);
   transition: all 0.2s var(--ease);
 }
 
 .contact-item:hover {
-  border-color: rgba(43, 43, 51, 0.25);
+  border-color: rgba(226, 184, 79, 0.25);
 }
 
 .contact-item__icon {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(43, 43, 51, 0.2);
+  border: 1px solid rgba(226, 184, 79, 0.2);
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  background: rgba(43, 43, 51, 0.05);
+  background: rgba(226, 184, 79, 0.05);
 }
 
 .contact-item__icon svg {
@@ -843,10 +820,10 @@ p {
   height: 48px;
   margin: 0 auto 1rem;
   border-radius: 50%;
-  border: 1px solid rgba(43, 43, 51, 0.2);
+  border: 1px solid rgba(226, 184, 79, 0.2);
   display: grid;
   place-items: center;
-  background: rgba(43, 43, 51, 0.05);
+  background: rgba(226, 184, 79, 0.05);
 }
 
 .value-card .glyph svg {
@@ -883,9 +860,9 @@ p {
   text-transform: uppercase;
   padding: 0.3rem 0.7rem;
   border-radius: 4px;
-  background: rgba(43, 43, 51, 0.08);
+  background: rgba(226, 184, 79, 0.08);
   color: var(--color-silver);
-  border: 1px solid rgba(43, 43, 51, 0.12);
+  border: 1px solid rgba(226, 184, 79, 0.12);
 }
 
 /* ---------- Footer ---------- */
@@ -895,8 +872,8 @@ p {
   position: relative;
   z-index: 1;
   margin-top: 4rem;
-  border-top: 1px solid rgba(10, 10, 20, 0.06);
-  background: rgba(255, 255, 255, 0.75);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(10, 10, 11, 0.6);
   backdrop-filter: blur(10px);
 }
 
@@ -947,7 +924,7 @@ p {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1.5rem 2rem;
-  border-top: 1px solid rgba(10, 10, 20, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
